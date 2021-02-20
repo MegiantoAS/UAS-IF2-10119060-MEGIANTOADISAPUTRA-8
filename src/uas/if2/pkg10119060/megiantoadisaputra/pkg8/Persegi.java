@@ -12,18 +12,20 @@ package uas.if2.pkg10119060.megiantoadisaputra.pkg8;
  Kelas        : IF-2
  NIM          : 10119060
  */
-public class UASIF210119060MEGIANTOADISAPUTRA8 {
-
-    /**
-     * @param args the command line arguments
-     */
-  public static void main(String[] args) 
+public class Persegi implements BangunDatar 
+{
+    private int luas;
+    private final int sisi;
+    
+    public Persegi(int sisi)
     {
-        // TODO code application logic here
-        Persegi p = new Persegi(6);
-        p.hitungLuas();
+        this.sisi = sisi;
+    }
+    
+    public void hitungLuas()
+    {
+        luas = sisi * sisi;
         
-        PersegiPanjang pp = new PersegiPanjang(5, 7) {};
-        pp.hitungLuas();
+        System.out.println("Luas Persegi : " + luas);
     }
 }
